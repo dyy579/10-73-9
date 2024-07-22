@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欢迎来到我的糖果小屋！！</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #f3f3f3;
+        color: #333;
+        text-align: center;
+        padding: 50px;
+    }
+    .container {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .lock {
+        font-size: 4em;
+        color: #6c5ce7;
+        margin-bottom: 20px;
+    }
+    .input {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: calc(100% - 22px);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .button {
+        padding: 10px 20px;
+        background: #a29bfe;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .button:hover {
+        background: #6c5ce7;
+    }
+</style>
+</head>
+<body>
+
+<p>欢迎来到我精心布置的糖果小屋</p>
+<p>我想要让每一张糖纸里都包裹着希望</p>
+<p>啊 亲爱的孩子 看来你收到了邀请呢</p>
+<p>毕竟这里可不是能随便进入的哟</p>
+<p>嗯 这说明你是一个有灵性的好孩子</p>
+<p>好孩子来当然要获得奖励...让我想想</p>
+<p>那么我送给你一颗糖果</p>
+<img src="糖果2.png"/>
+<p>我看到你的眼睛里有深蓝的灰尘</p>
+<p>是因为没睡好还是诸事缠身</p>
+<p>不管怎样我都应当祝福你</p>
+<p>我看到你灵魂中的小小闪光</p>
+<p>你是一个很棒的孩子</p>
+<p>小小的灵感闪光永远与你同在</p>
+<p>或许你可以打开糖纸...</p>
+<p>糖纸会回应你的愿望</p>
+<p>但在此之前</p>
+<p>需要对糖果说出谜语的谜底</p>
+<p>那是一个七个字母的英文名词</p>
+<p>准备好了吗...</p>
+<p>我想要给你一些丝线以及羽毛...</p>
+<p>谜语：<br>
+    "六棱柱向外茁壮生长<br>
+    女巫指上沉沉晃荡<br>
+    它说预言言而无状<br>
+    剔透在裂隙将愿望埋藏"<br>
+</p>
+<p>将谜底输入下面的方框里：</p>
+<div class="container">
+    <div class="lock">🔒</div>
+    <div class="input">
+        <input type="password" id="passwordInput" placeholder="请输入谜底">
+    </div>
+    <button class="button" onclick="unlock()">打开糖纸</button>
+</div>
+
+<script>
+    function unlock() {
+        var password = document.getElementById('passwordInput').value;
+        if (password === 'crystal') { // 设置正确的密码为 'magiclove'
+            window.location.href = 'magic.html'; // 重定向到魔法页面
+        } else {
+            alert('密码错误，请重新输入！');
+        }
+    }
+</script>
+
+</body>
+</html>
+  
